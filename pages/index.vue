@@ -70,7 +70,7 @@
         <p v-if="errorMessage" class="error_message">{{ errorMessage }}</p>
       </section>
       <aside class="right_content">
-        <img alt="home banner" class="home_banner" src="/public/home_banner.png">
+        <img alt="home banner" class="home_banner" src="\~/public/home_banner.png" />
       </aside>
     </div>
 
