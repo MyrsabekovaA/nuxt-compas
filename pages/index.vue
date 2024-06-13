@@ -509,7 +509,7 @@ input.invalid {
     margin: 0 0 20px 0;
   }
 }
-@media (max-width: 460px){
+@media (max-width: 485px){
   .main_block {
     max-width: 380px;
   }
