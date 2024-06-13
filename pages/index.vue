@@ -55,7 +55,7 @@
               <img src="@/assets/arrow.svg" alt="arrow">
             </button>
             <button type="button" @click="openModal" class="about_video regular">
-              <img src="@/assets/YOUTUBE.svg" alt="youtube">
+              <img src="/public/YOUTUBE.svg" alt="youtube">
               <span class="regular text">О сервисе</span>
               <span class="regular amount">(1 мин. 20 сек)</span>
             </button>
@@ -70,7 +70,7 @@
         <p v-if="errorMessage" class="error_message">{{ errorMessage }}</p>
       </section>
       <aside class="right_content">
-        <img alt="home banner" class="home_banner" src="@/assets/home_banner.png">
+        <img alt="home banner" class="home_banner" src="/public/home_banner.png">
       </aside>
     </div>
 
@@ -249,7 +249,7 @@ input.invalid {
 }
 
 .check img{
-  margin: 7px auto 14px 4px;
+  margin: 6px auto 14px 4px;
 }
 
 .about_video{
@@ -329,8 +329,9 @@ input.invalid {
   }
 
   .right_content img{
-    width: 460px;
-    height: 360px;
+    margin-top: 60px;
+    width: 430px;
+    height: 290px;
   }
 
   .main_block h1 {
@@ -351,17 +352,23 @@ input.invalid {
     gap: 10px;
   }
 
-  .check, .about_video {
-    width: 80%;
+  .check{
+    width: 60%;
+    padding: 10px;
+    align-items: center;
     font-size: 16px;
   }
-
-  .check{
-    padding: 10px 2px 13px 18px;
+  .about_video {
+    width: 80%;
+    align-items: center;
+    font-size: 16px;
   }
-
+  .check img{
+    margin: 0 3px;
+  }
   .about_video{
     padding: 5px;
+    gap: 5px;
   }
 
   .about_video .text, .about_video .amount{
@@ -369,7 +376,7 @@ input.invalid {
   }
 
   .about_video img{
-    margin: 5px auto;
+    margin: 5px;
   }
 
   .about_video .text {
@@ -392,7 +399,36 @@ input.invalid {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .main_block {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .right_content img{
+    margin-top: 60px;
+    width: 370px;
+    height: 250px;
+  }
+  .check{
+    font-size: 14px;
+  }
+  .about_video .text, .about_video .amount{
+    font-size: 13px;
+    margin: 8px 0;
+  }
+  .advantages{
+    max-width: 800px;
+  }
+  .documents{
+    max-width: 695px;
+
+  }
+}
+
+@media (max-width: 795px) {
   .main_block {
     flex-direction: column;
     align-items: center;
@@ -408,6 +444,11 @@ input.invalid {
 
   .right_content{
     margin-top: 20px;
+  }
+  .right_content img{
+    margin:0;
+    width: 395px;
+    height: 250px;
   }
 
   .main_block h1 {
@@ -429,26 +470,34 @@ input.invalid {
   .check {
     text-align: center;
     justify-content: center;
+    width: 80%;
   }
 
   .check{
-    padding: 10px 10px 10px 70px;
-    justify-content: space-between;
-    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+    gap: 5px;
   }
-
+  .about_video{
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 13px;
+    width: 80%;
+    margin: 0;
+    padding: 5px 0;
+  }
   .about_video img{
     width: 30px;
     height: 30px;
-    margin: 0 30px  0 10px;
-  }
 
+  }
   .agreement {
     margin-top: 20px;
   }
 
   .advantages, .documents {
-    max-width: 640px;
+    max-width: 625px;
     margin: 40px auto;
     padding: 0 15px;
     width: 100%;
@@ -460,7 +509,7 @@ input.invalid {
     margin: 0 0 20px 0;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 460px){
   .main_block {
     max-width: 380px;
   }
@@ -481,7 +530,7 @@ input.invalid {
   }
   .right_content img{
     width: 320px;
-    height: 270px;
+    height: 225px;
   }
   .advantages, .documents{
     max-width: 380px;

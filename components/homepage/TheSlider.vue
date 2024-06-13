@@ -169,7 +169,7 @@ export default {
   }
   .slide{
     width: 300px;
-    height: 400px;
+    height: 440px;
   }
   button img{
     width: 35px;
@@ -179,26 +179,35 @@ export default {
     top: 40%;
   }
 }
-@media (max-width: 768px) {
-  .slider{
+@media (max-width: 1024px) {
+  .slider {
     gap: 45px;
   }
-  button img{
-    width: 30px;
-    height: 70px;
+  .prev-button {
+    left: 0;
+  }
+  .slider {
+    margin: 5px 15px;
+    transform: translateX(-1052px);
+  }
+}
+@media (max-width: 795px) {
+  .slider {
+    margin: 10px;
+    gap: 20px;
   }
   .slide{
-    width: 245px;
-    height: 400px;
+    width: 265px;
+    height: 370px;
   }
-  @media (max-width: 425px){
+}
+@media (max-width: 640px){
     .slide{
       width: 270px;
       height: 400px;
     }
     .next-button{
-      right: 7px;
+      right: 0px;
     }
   }
-}
 </style>

@@ -78,18 +78,20 @@ export default {
     height: 35px;
   }
 }
-
-@media (max-width: 768px) {
-  .slide-content h3 {
-    font-size: 18px;
+@media (max-width: 795px) {
+  .slide-content {
+    padding: 15px;
   }
-
+  .slide-content h3 {
+    font-size: 21px;
+  }
   .slide-content p{
     font-size: 14px;
   }
   .slide-content button{
-    width: 195px;
+    width: 220px;
     height: 35px;
   }
 }
+
 </style>

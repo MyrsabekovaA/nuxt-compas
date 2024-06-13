@@ -135,9 +135,15 @@ line-height: 18px;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
+  .grid-blocks {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 795px){
   .grid-blocks{
-    margin: 0  ;
+    margin: 0;
     padding: 0 12px;
     gap: 20px;
   }
@@ -157,10 +163,12 @@ line-height: 18px;
   }
 }
 
-@media (max-width: 425px){
+@media (max-width: 640px){
   .grid-blocks {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    max-width: 340px;
+    margin: 0 auto;
   }
   .grid-item{
     width: 326px;

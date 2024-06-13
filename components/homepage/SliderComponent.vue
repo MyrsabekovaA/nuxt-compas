@@ -42,10 +42,23 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .slider-block{
+    margin: 0;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .slider-block{
     margin: 0;
     padding: 0 12px;
+  }
+}
+@media (max-width: 640px) {
+  .slider-block{
+    max-width: 315px;
+    margin: 0 auto;
   }
 }
 </style>

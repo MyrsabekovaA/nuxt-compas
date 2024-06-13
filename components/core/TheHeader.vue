@@ -18,7 +18,7 @@ export default {
   <section class="header_block">
     <div class="header_content">
       <div class="left_content">
-        <NuxtLink to="/"><img alt="compas logo" class="logo" src="@/assets/logo.svg" width="119" height="26"/></NuxtLink>
+        <NuxtLink to="/"><img alt="compas logo" class="logo" src="/public/logo.svg" width="119" height="26"/></NuxtLink>
         <nav class="navigation_links regular" aria-label="Primary Navigation">
           <NuxtLink to="/tariffs">Тарифы</NuxtLink>
           <NuxtLink to="/contacts">Контакты</NuxtLink>
@@ -131,7 +131,7 @@ nav a:hover {
 }
 
 p{
-  margin: 16px 1px 21px 0;
+  margin: 19px 1px 21px 0;
   color: white;
   font-size: 18px;
 }
