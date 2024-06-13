@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: '/nuxt-compas/'
+    baseURL: '/'
   },
   css: [
     'assets/main.css',
