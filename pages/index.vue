@@ -70,7 +70,7 @@
         <p v-if="errorMessage" class="error_message">{{ errorMessage }}</p>
       </section>
       <aside class="right_content">
-        <img alt="home banner" class="home_banner" src="/home_banner.png" />
+        <img alt="home banner" class="home_banner" src={homebanner}/>
       </aside>
     </div>
 
@@ -97,6 +97,7 @@ import {ref} from 'vue';
 import GridComponent from '@/components/homepage/GridComponent.vue'
 import SliderComponent from '@/components/homepage/SliderComponent.vue'
 import ModalComponent from '@/components/homepage/ModalComponent.vue'
+import homebanner from 'public/home_banner.png'
 
 const autonumber = ref('');
 const region = ref('');
